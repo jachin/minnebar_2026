@@ -67,19 +67,15 @@
 
 # How it works
 
-Weather station communicates of a special wireless link the base station.
+- Weather station collects weather data
+- Send data to the indoor station every minute
+- Indoor station displays it
+- Optionally sends it to a "Cloud" service
+- No local storage (but I think some do)
 
-The base station tries to send your weather data to the cloud (where you can use their app)
-
-But you're not exactly locked in. You can point the base station at any URL, but it has to mimic the API of either AmbientWeather or Wunderground. Which, as these things go, is fine, just _fine_.
-
----
-
-# Self Hosting the Weather Data
-
-# Weather Station Data Collector
-
-And then, the world!
+^ The base station tries to send your weather data to the cloud (where you can use their app)
+^ But you're not exactly locked in. You can point the base station at any URL, but it has to mimic the API of either AmbientWeather or Wunderground. Which, as these things go, is fine, just _fine_.
+^ If the data isn't collected, it's gone
 
 ---
 
@@ -99,9 +95,11 @@ And then, the world!
 
 # To my TRMNL
 
-I talked last year about TRMNL
+## I talked last year about TRMNL
 
-Built a plugin
+## Built a plugin
+
+^ There should be a picture here but I didn't get to it
 
 ---
 
@@ -178,7 +176,7 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 
 ![](./PTL-1.jpg.webp)
 
-# [fit] PLT-1
+# PLT-1
 
 - A plant monitor you don't have to build your self
 - ESPHome
@@ -189,7 +187,13 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 
 ---
 
-Data vs Solutions
+# PLT-1
+
+- Not quite sure what to do with the data yet
+- How much water does a particular plant even need?
+
+^ My wife mostly takes care of the plants
+^ She's always "saying" her plants our dying but they hardly ever do
 
 ---
 
@@ -285,11 +289,7 @@ arrow from U.n to G.w thick thick thick
 
 ---
 
-# [fit] 🙈🙊🙉
-
----
-
-# AI Generated Poems
+# LLM Generated Poems
 
 - Silly Birthday Themed Poems
 - Personalized
@@ -297,10 +297,6 @@ arrow from U.n to G.w thick thick thick
 - Is it great poetry? 👎
 - Is it better than I can do? 👍
 - Is it fun? 👍
-
----
-
-# [fit] it's over!
 
 ---
 

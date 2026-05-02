@@ -199,6 +199,19 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 
 ---
 
+# Home Assistant
+
+![inline](./Screenshot of plant monitors in home assistant.png)
+
+---
+
+# Grafana
+
+![inline](./Screenshot of plant monitors in grafana.png)
+
+
+---
+
 # [fit] 🔘🔲
 # [fit] Buttons
 

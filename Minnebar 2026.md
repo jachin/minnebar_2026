@@ -5,7 +5,7 @@
 
 ---
 
-# This Presentation in on GitHub
+# This Presentation is on GitHub
 
 ## You can find me if you remember how to spell my name "Jachin"
 
@@ -14,9 +14,9 @@
 ---
 
 # Amateur
-## Former Full Time Software Engineer
+## Former Full-Time Software Engineer
 
-- A long time ago I was a full stack web developer
+- A long time ago, I was a full-stack web developer
 - Long and slow migration to web frontend
 - Long and slow migration to functional programming and strongly typed languages
 - Mostly a stay-at-home Dad now
@@ -44,14 +44,14 @@
 ---
 
 > Why would I want my own weather station?
--- Just about everyone with a smart phone
+-- Just about everyone with a smartphone.
 
 ---
 
 ## The actual weather
 
- - Sometimes the weather at your house is different than the weather at the closest weather station
- - Growing Degree Days
+ - Sometimes the weather at your house is different than the weather at the closest weather station.
+ - Growing Degree Days.
 
 ## Contributing to weather data
 
@@ -73,9 +73,9 @@
 - Optionally sends it to a "Cloud" service
 - No local storage (but I think some do)
 
-^ The base station tries to send your weather data to the cloud (where you can use their app)
+^ The base station tries to send your weather data to the cloud (where you can use their app).
 ^ But you're not exactly locked in. You can point the base station at any URL, but it has to mimic the API of either AmbientWeather or Wunderground. Which, as these things go, is fine, just _fine_.
-^ If the data isn't collected, it's gone
+^ If the data isn't collected, it's gone.
 
 ---
 
@@ -99,7 +99,7 @@
 
 ## Built a plugin
 
-^ There should be a picture here but I didn't get to it
+^ There should be a picture here, but I didn't get to it.
 
 ---
 
@@ -107,17 +107,19 @@
 
 ![inline](./windmill_icon.svg)
 
-> Code-first orchestration platform for internal software
+> Code-first orchestration platform for internal software.
 
 ---
 
 # Windmill
 
 - Fancy Cron
-- "Update my TRMNL plugin with the latest weather from my weather station every 15 minutes"
+- "Update my TRMNL plugin with the latest weather from my weather station every 15 minutes."
 - Easy to install (and update) on TrueNAS
 - Way more than I need (but thoughtfully designed so it's not hard to use)
 - Lots of other things out there to do this
+
+^ There are a lot of things out there than can do this just
 
 ---
 
@@ -142,8 +144,8 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
   - Better APIs
   - Data Roll up
 - TRMNL
-  - Self Host TRMNL Software
-  - Better looking plugin
+  - Self-Host TRMNL Software
+  - Better-looking plugin
 
 ---
 
@@ -167,10 +169,10 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 - ESP32 for everything (maybe?)
 - A little pricey
 
-^ 3D printed cases
+^ 3D-printed cases
 ^ Functional
-^ It's the kind of thing you could build your self, so it's easy to decide if you'd rather just buy what they've made
-^ Wifi (not a lower power)
+^ It's the kind of thing you could build yourself, so it's easy to decide if you'd rather just buy what they've made
+^ Wi-Fi (not a lower power)
 
 ---
 
@@ -178,11 +180,11 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 
 # PLT-1
 
-- A plant monitor you don't have to build your self
+- A plant monitor you don't have to build yourself
 - ESPHome
-- Super easy to setup
+- Super easy to set up
 - I like the power options (rechargeable battery or plugin)
-- The hard part is figuring out how make the data useful
+- The hard part is figuring out how to make the data useful
 - Knowing what the soil moisture is ≠ knowing when to water your plants
 
 ---
@@ -193,7 +195,7 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 - How much water does a particular plant even need?
 
 ^ My wife mostly takes care of the plants
-^ She's always "saying" her plants our dying but they hardly ever do
+^ She's always "saying" her plants are dying, but they hardly ever do
 
 ---
 
@@ -207,7 +209,7 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 ![inline](./Minoston 800 Series ZWave Button.jpg)
 
 ^ This is a popular form factor. A company called Zooz also makes something very similar. They have a rechargeable version you can charge with USB-C
-^ I bought one of each of my kid's rooms.
+^ I bought one of each of my kids’ rooms.
 ^ They worked a lot better once I moved the hub to the middle of the house.
 ^ Mesh-Smesh
 
@@ -262,10 +264,10 @@ arrow from U.n to G.w thick thick thick
 
 ---
 
-# Too may buttons
+# Too many buttons
 
 - Paradigm shift to think in "scenes"
-- Everything does not need it's own button
+- Everything does not need its own button
 
 ---
 
@@ -284,7 +286,7 @@ arrow from U.n to G.w thick thick thick
 - Silly Poems
 
 ^ The big button has nice drama, but it stopped working
-^ Time based rules
+^ Time-based rules
 ^ Excited to use the Apollo keyboard button, maybe do something with the lights
 
 ---
@@ -293,7 +295,7 @@ arrow from U.n to G.w thick thick thick
 
 - Silly Birthday Themed Poems
 - Personalized
-- Suggest the style of poem (limerick, sonnet, etc)
+- Suggest the style of poem (limerick, sonnet, etc.)
 - Is it great poetry? 👎
 - Is it better than I can do? 👍
 - Is it fun? 👍
@@ -328,11 +330,11 @@ arrow from U.n to G.w thick thick thick
 - Turn on lights when it's time to feed the cat
 - One color for each kid (when it's their turn to feed the cat)
 - Push the button when you're done
-- The Light turns off
+- The light turns off
 - Still figuring out the battery situation
 
 ^ I probably need to find a place to put it where it can stay plugged in
-^ The magnets work good for keeping it on the fridge
+^ The magnets work well for keeping it on the fridge
 
 ---
 

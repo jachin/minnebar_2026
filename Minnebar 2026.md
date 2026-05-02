@@ -5,6 +5,14 @@
 
 ---
 
+# This Presentation in on GitHub
+
+## You can find me if you remember how to spell my name "Jachin"
+
+### Not a lot of Jachins on the Internet
+
+---
+
 # Amateur
 ## Former Full Time Software Engineer
 
@@ -29,7 +37,9 @@
 
 ---
 
+# [fit] 🌦️📺
 # [fit] Weather Station
+
 
 ---
 
@@ -51,7 +61,7 @@
 
 # [fit] Ambient Weather WS-2902D Web G
 
-![inline](/Users/jachin/Documents/speaking/minnebar 2026/aw-ws-2902.jpg.webp)
+![inline](./aw-ws-2902.jpg.webp)
 
 ---
 
@@ -97,7 +107,7 @@ Built a plugin
 
 # Windmill
 
-![inline](/Users/jachin/Documents/speaking/minnebar 2026/windmill_icon.svg)
+![inline](./windmill_icon.svg)
 
 > Code-first orchestration platform for internal software
 
@@ -139,37 +149,43 @@ TP: box rad 10px "🖥️ TRMNL Plugin" fit
 
 ---
 
-# [fit] Plant Monitors
 # [fit] 🌱👀
+# [fit] Plant Monitors
 
 ---
 
-I intend to make my own, someday
+### I intend to make my own
+## someday
 
-(Maybe a picture of parts)
+![](./plant_monitor_parts.jpeg)
 
 ---
+
+![inline](./Apollo_Logo_Stacked.png.avif)
 
 # Apollo Automation
 
-Function, 3D printed stuff
+- Very open
+- ESP32 for everything (maybe?)
+- A little pricey
 
+^ 3D printed cases
+^ Functional
+^ It's the kind of thing you could build your self, so it's easy to decide if you'd rather just buy what they've made
+^ Wifi (not a lower power)
 
 ---
 
-# PLT-1
+![](./PTL-1.jpg.webp)
 
-A plant monitor you don't have to build your self
+# [fit] PLT-1
 
-ESPHome
-
-Super easy to setup
-
-I like the power options (rechargeable battery or plugin)
-
-The hard part is figuring out how make the data useful
-
-Knowing what the soil moisture is ≠ knowing when to water your plants
+- A plant monitor you don't have to build your self
+- ESPHome
+- Super easy to setup
+- I like the power options (rechargeable battery or plugin)
+- The hard part is figuring out how make the data useful
+- Knowing what the soil moisture is ≠ knowing when to water your plants
 
 ---
 
@@ -177,17 +193,19 @@ Data vs Solutions
 
 ---
 
-# BTN-1
-
-## Apollo Automation
-
-4 Buttons plus lights
+# [fit] 🔘🔲
+# [fit] Buttons
 
 ---
 
-# Maybe over did it on the buttons
+# Minoston 800 Series ZWave
 
-Once you start thinking in terms of "scenes" and not turning this or that thing on, maybe you don't need button.
+![inline](./Minoston 800 Series ZWave Button.jpg)
+
+^ This is a popular form factor. A company called Zooz also makes something very similar. They have a rechargeable version you can charge with USB-C
+^ I bought one of each of my kid's rooms.
+^ They worked a lot better once I moved the hub to the middle of the house.
+^ Mesh-Smesh
 
 ---
 
@@ -195,18 +213,151 @@ Once you start thinking in terms of "scenes" and not turning this or that thing 
 
 ## 1 Button cycles through 4 scenes
 
-### Getting ready for bed
+```pikchr
+boxwid = 2
+boxht = 1
 
-### Winding Down
+# Top
+G: box rad 0.25 \
+  "Getting ready for bed" \
+  "White noise: ON" \
+  "LED strip: ON" \
+  "Book lamp: ON" \
+  at 0,1.5
 
-### Sleeping
+# Right
+W: box rad 0.25 \
+  "Winding Down" \
+  "White noise: ON" \
+  "LED strip: DIM" \
+  "Book lamp: ON" \
+  at 2,0
 
- - White noise machine (off)
- - Book shelf LED strip (very dim)
- - Book lamp (off)
+# Bottom
+S: box rad 0.25 \
+  "Sleeping" \
+  "White noise: OFF" \
+  "LED strip: VERY DIM" \
+  "Book lamp: OFF" \
+  at 0,-1.5
 
-### Wake up (Everything off
+# Left
+U: box rad 0.25 \
+  "Wake up (Everything off)" \
+  "White noise: OFF" \
+  "LED strip: OFF" \
+  "Book lamp: OFF" \
+  at -2,0
 
- - White noise machine (off)
- - Book shelf LED strip (off)
- - Book lamp (off)
+# Arrows (cycle clockwise)
+arrow from G.e to W.n thick thick thick
+arrow from W.s to S.e thick thick thick
+arrow from S.w to U.s thick thick thick
+arrow from U.n to G.w thick thick thick
+```
+
+---
+
+# Too may buttons
+
+- Paradigm shift to think in "scenes"
+- Everything does not need it's own button
+
+---
+
+![](./big red button.jpg)
+
+
+# [fit] Birthday Button
+
+---
+
+# Build your own Birthday Button
+
+- Hubitat has a cool voice notification feature
+- Snooty British Voice
+- Leverage (1, 2, 3, clicks)
+- Silly Poems
+
+^ The big button has nice drama, but it stopped working
+^ Time based rules
+^ Excited to use the Apollo keyboard button, maybe do something with the lights
+
+---
+
+# [fit] 🙈🙊🙉
+
+---
+
+# AI Generated Poems
+
+- Silly Birthday Themed Poems
+- Personalized
+- Suggest the style of poem (limerick, sonnet, etc)
+- Is it great poetry? 👎
+- Is it better than I can do? 👍
+- Is it fun? 👍
+
+---
+
+# [fit] it's over!
+
+---
+
+![](./Asher.jpg)
+
+# [fit] Time to feed the Cat
+
+---
+
+![](./BTN-1_Stand_Right.jpg.webp)
+
+# [fit] BTN-1
+
+ - Apollo Automation
+ - 4 Buttons
+ - 4 LEDs
+ - Customizable
+
+^ Standard Keyboard Switches
+^ You can put on your own key caps
+^ Use your own switches
+
+---
+
+# Remember to feed the cat
+## Schedule and Notifications
+
+- Hubitat makes this easy-ish
+- Turn on lights when it's time to feed the cat
+- One color for each kid (when it's their turn to feed the cat)
+- Push the button when you're done
+- The Light turns off
+- Still figuring out the battery situation
+
+^ I probably need to find a place to put it where it can stay plugged in
+^ The magnets work good for keeping it on the fridge
+
+---
+
+# Thank You
+
+## Questions and Discussion
+
+### More?
+
+---
+
+# [fit] Garage Door Opener
+
+---
+
+# [fit] Door Bell
+
+---
+
+# [fit] Laundry Notifications
+
+---
+
+# [fit] Sprinkler System
